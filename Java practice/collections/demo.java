@@ -3,9 +3,10 @@ package com.collections;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Demo {
-
-	public static void main(String[] args) {
+public class Demo 
+{
+	public static void main(String[] args) 
+	{
 		// TODO Auto-generated method stub
 		Employee employee1 = new Employee("Saptha","Hassan",101);
 		Employee employee2 = new Employee("Rama","Banglore",102);
@@ -16,12 +17,14 @@ public class Demo {
 		employeeList.add(employee2);
 		employeeList.add(employee3);
 		employeeList.add(employee4);
-		for(Employee emp : employeeList) {
+		for(Employee emp : employeeList) 
+		{
 			System.out.println(emp);
 		}
 		Collections.sort(employeeList);
 		System.out.println("Sorted List");
-		for(Employee emp : employeeList) {
+		for(Employee emp : employeeList) 
+		{
 			System.out.println(emp);
 		}
 		
