@@ -8,7 +8,8 @@ import com.Exceptions.TooShortException;
 
 public class Registration {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		// TODO Auto-generated method stub
 		Validator validator = new Validator();
 		Scanner sc = new Scanner(System.in);
@@ -16,20 +17,26 @@ public class Registration {
 		String username = sc.next();
 		try {
 			boolean valid = validator.validateName(username);
-			if(valid) {
+			if(valid) 
+			{
 				System.out.println("Welcome "+username);
 				System.out.println("Enter Password");
 				String password = sc.next();
 				if(validator.validatePassword(password));
 				System.out.println("You are registered successfully");
 			}
-		} catch (NameExistsException e) {
+		} 
+		catch (NameExistsException e) 
+		{
 			System.out.println("Name already Exists");
-		} catch (TooLongException e) {
+		} 
+		catch (TooLongException e) 
+		{
 			System.out.println(e.getMessage());
-		} catch (TooShortException e) {
-		
-		System.out.println(e.getMessage());
+		} 
+		catch (TooShortException e) 
+		{
+			System.out.println(e.getMessage());
 		}
 		sc.close();
 
