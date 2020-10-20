@@ -1,35 +1,35 @@
 package com.collections;
 
 public class Employee implements Comparable<Employee>{
-	private String name;
-	private String city;
+	private String empname;
+	private String empcity;
 	
 	public Employee() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Employee(String name, String city, Integer empId) {
+	public Employee(String empname, String empcity, Integer empId) {
 		super();
-		this.name = name;
-		this.city = city;
+		this.empname = empname;
+		this.empcity = empcity;
 		this.empId = empId;
 	}
 	@Override
 	public String toString() {
-		return "Employee [name=" + name + ", city=" + city + ", empId=" + empId + "]";
+		return "Employee [name=" + empname + ", city=" + empcity + ", empId=" + empId + "]";
 	}
 	private Integer empId;
 	public String getName() {
-		return name;
+		return empname;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setName(String empname) {
+		this.empname = empname;
 	}
 	public String getCity() {
-		return city;
+		return empcity;
 	}
-	public void setCity(String city) {
-		this.city = city;
+	public void setCity(String empcity) {
+		this.empcity = empcity;
 	}
 	public Integer getEmpId() {
 		return empId;
