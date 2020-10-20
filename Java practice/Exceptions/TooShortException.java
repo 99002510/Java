@@ -1,21 +1,20 @@
 package com.Exceptions;
 
-public class TooShortException extends Exception {
-
+public class TooShortException extends Exception 
+{
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public TooShortException() {
+	public TooShortException() 
+	{
 		// TODO Auto-generated constructor stub
 	}
 
-	public TooShortException(String message) {
+	public TooShortException(String message) 
+	{
 		super(message);
 		// TODO Auto-generated constructor stub
 	}
-
-
-
 }
